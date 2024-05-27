@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em auto;
+    max-width: 1200px;
+}
+
+.gallery-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 200px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-item h3 {
+    margin: 0.5em 0 0.2em;
+}
+
+.gallery-item p {
+    color: #555;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flower Gallery</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="download (1).jfif" alt="Rose">
+                <h3>Rose</h3>
+                <p>$10.00</p>
+            </div>
+            <div class="gallery-item">
+                <img src="download.jfif" alt="Tulip">
+                <h3>Tulip</h3>
+                <p>$8.00</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Flower_jtca001.jpg" alt="Daisy">
+                <h3>Daisy</h3>
+                <p>$7.00</p>
+            </div>
+            <!-- Add more gallery items as needed -->
+        </section>
+    </main>
+   <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+    console.log('Gallery Page Loaded');
+});
+
+   </script>
+</body>
+</html>
